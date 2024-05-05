@@ -11,6 +11,7 @@ import { AppointmentResumeComponent } from './components/appointment-resume/appo
 import { LayoutStandardComponent } from './components/layout/layout-standard/layout-standard.component';
 import { CommonModule } from '@angular/common';
 import { AppointmentTimeComponent } from './components/appointment-time/appointment-time.component';
+import { AppointmentCompletedComponent } from './components/appointment-completed/appointment-completed.component';
 
 
 
@@ -25,7 +26,8 @@ import { AppointmentTimeComponent } from './components/appointment-time/appointm
     MyAppointmentsComponent,
     AppointmentComponent,
     AppointmentTimeComponent,
-    LayoutStandardComponent,    
+    LayoutStandardComponent,
+    AppointmentCompletedComponent,   
   ],
   imports: [
     BrowserModule,
