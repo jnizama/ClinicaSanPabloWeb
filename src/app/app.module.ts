@@ -9,7 +9,6 @@ import { MyAppointmentsComponent } from './components/my-appointments/my-appoint
 import { AppointmentComponent } from './components/appointment/appointment.component';
 import { AppointmentResumeComponent } from './components/appointment-resume/appointment-resume.component';
 import { LayoutStandardComponent } from './components/layout/layout-standard/layout-standard.component';
-import { LayoutLoginComponent } from './components/layout/layout-login/layout-login.component';
 
 
 
@@ -23,8 +22,7 @@ import { LayoutLoginComponent } from './components/layout/layout-login/layout-lo
     AppointmentComponent,
     MyAppointmentsComponent,
     AppointmentComponent,
-    LayoutStandardComponent,
-    LayoutLoginComponent
+    LayoutStandardComponent
   ],
   imports: [
     BrowserModule,

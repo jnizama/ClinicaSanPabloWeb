@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LayoutLoginComponent } from './components/layout/layout-login/layout-login.component';
 import { LoginComponent } from './components/login/login.component';
 import { LayoutStandardComponent } from './components/layout/layout-standard/layout-standard.component';
 import { HomeComponent } from './components/home/home.component';
@@ -10,7 +9,7 @@ import { MyAppointmentsComponent } from './components/my-appointments/my-appoint
 
 const routes: Routes = [
   {
-    path: '', component: LayoutLoginComponent, 
+    path: '', component: LayoutStandardComponent, 
     children: [      
       { path: '', component: LoginComponent, pathMatch: 'full' },
       { path: 'login', component: LoginComponent, pathMatch: 'full' },
