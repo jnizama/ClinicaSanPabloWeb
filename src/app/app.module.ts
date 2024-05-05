@@ -9,6 +9,8 @@ import { MyAppointmentsComponent } from './components/my-appointments/my-appoint
 import { AppointmentComponent } from './components/appointment/appointment.component';
 import { AppointmentResumeComponent } from './components/appointment-resume/appointment-resume.component';
 import { LayoutStandardComponent } from './components/layout/layout-standard/layout-standard.component';
+import { CommonModule } from '@angular/common';
+import { AppointmentTimeComponent } from './components/appointment-time/appointment-time.component';
 
 
 
@@ -22,10 +24,12 @@ import { LayoutStandardComponent } from './components/layout/layout-standard/lay
     AppointmentComponent,
     MyAppointmentsComponent,
     AppointmentComponent,
-    LayoutStandardComponent
+    AppointmentTimeComponent,
+    LayoutStandardComponent,    
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],

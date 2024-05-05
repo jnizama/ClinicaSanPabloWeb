@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
 import { AppointmentResumeComponent } from './components/appointment-resume/appointment-resume.component';
 import { MyAppointmentsComponent } from './components/my-appointments/my-appointments.component';
+import { AppointmentTimeComponent } from './components/appointment-time/appointment-time.component';
 
 const routes: Routes = [
   {
@@ -22,7 +23,8 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent, pathMatch: 'full'},
       { path: 'appointment', component: AppointmentComponent, pathMatch: 'full'},
       { path: 'appointment-resume', component: AppointmentResumeComponent, pathMatch: 'full'},
-      { path: 'my-appointment', component: MyAppointmentsComponent, pathMatch: 'full'}
+      { path: 'my-appointment', component: MyAppointmentsComponent, pathMatch: 'full'},
+      { path: 'appointment-time', component: AppointmentTimeComponent, pathMatch: 'full'}
     ]
   }
   ];
