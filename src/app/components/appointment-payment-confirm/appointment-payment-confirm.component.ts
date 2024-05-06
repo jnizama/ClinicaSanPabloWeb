@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-appointment-payment-confirm',
-  standalone: true,
-  imports: [],
+  selector: 'app-appointment-payment-confirm',    
   templateUrl: './appointment-payment-confirm.component.html',
-  styleUrl: './appointment-payment-confirm.component.css'
+  styleUrls: ['./appointment-payment-confirm.component.css']
 })
 export class AppointmentPaymentConfirmComponent {
 
