@@ -16,13 +16,14 @@ const routes: Routes = [
     children: [      
       { path: '', component: LoginComponent, pathMatch: 'full' },
       { path: 'login', component: LoginComponent, pathMatch: 'full' },
+      { path: 'home', component: HomeComponent, pathMatch: 'full'},
     ]
   },
   {
     path: '', component: LayoutStandardComponent,  
     children: [
       //{ path: 'test/:id', component: AboutComponent }
-      { path: 'home', component: HomeComponent, pathMatch: 'full'},
+      
       { path: 'appointment', component: AppointmentComponent, pathMatch: 'full'},
       { path: 'appointment-resume', component: AppointmentResumeComponent, pathMatch: 'full'},
       { path: 'my-appointment', component: MyAppointmentsComponent, pathMatch: 'full'},
