@@ -28,33 +28,34 @@
                     <table class="table" style="margin:0px;">
                         <thead style="background-color: rgba(52,58,64,0.75);color: #ffffff;">
                             <tr >
+                                <th class="align-middle">Nº.</th>
                                 <th class="align-middle">Sede </th>
                                 <th class="align-middle">Especialidad</th>
                                 <th class="align-middle">Fecha/Hora</th>  
                                 <th class="align-middle">Médico</th>                              
                                 <th class="align-middle">Consultorio</th>
-                                
                             </tr>
                         </thead>
                         <tbody >
                             <tr>
+                                <td class="align-middle">*</td>
                                 <td class="align-middle">SURCO</td>
                                 <td class="align-middle"></td>
                                 <td class="align-middle"></td>
                                 <td class="align-middle"></td>
                                 <td class="align-middle"></td>
                             </tr>
-                                   
                               
-                                    <tr *ngFor="let item of historial; let i = index">
+                            <tr *ngFor="let item of historial; let i = index">
 
-                                        <td ><h6> {{item.reg +1}} </h6> </td>
-                                        <td ><h6>{{item.especialidad}}</h6> </td>
-                                        <td >{{item.fechahora}}</td>
-                                        <td > <h6>{{item.medico}}</h6> </td>
-                                        <td >{{item.consultorio}}</td>
+                                <td > {{item.reg +1}}  </td>
+                                <td >  </td>
+                                <td > {{item.especialidad}} </td>
+                                <td > {{item.fechahora}}   </td>
+                                <td > {{item.medico}}      </td>
+                                <td > {{item.consultorio}} </td>
 
-                                    </tr>
+                            </tr>
 
                         </tbody>
                     </table>
