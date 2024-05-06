@@ -13,6 +13,8 @@ import { CommonModule } from '@angular/common';
 import { AppointmentTimeComponent } from './components/appointment-time/appointment-time.component';
 import { AppointmentCompletedComponent } from './components/appointment-completed/appointment-completed.component';
 import { AppointmentHistoriaComponent } from './components/appointment-historia/appointment-historia.component';
+import { AppointmentPaymentConfirmComponent } from './components/appointment-payment-confirm/appointment-payment-confirm.component';
+import { AppointmentPaymentCardComponent } from './components/appointment-payment-card/appointment-payment-card.component';
 
 
 
@@ -30,6 +32,8 @@ import { AppointmentHistoriaComponent } from './components/appointment-historia/
     LayoutStandardComponent,
     AppointmentCompletedComponent,   
     AppointmentHistoriaComponent,
+    AppointmentPaymentConfirmComponent,
+    AppointmentPaymentCardComponent, 
   ],
   imports: [
     BrowserModule,

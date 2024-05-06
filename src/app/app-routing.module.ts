@@ -9,6 +9,8 @@ import { MyAppointmentsComponent } from './components/my-appointments/my-appoint
 import { AppointmentTimeComponent } from './components/appointment-time/appointment-time.component';
 import { AppointmentCompletedComponent } from './components/appointment-completed/appointment-completed.component';
 import { AppointmentHistoriaComponent } from './components/appointment-historia/appointment-historia.component';
+import { AppointmentPaymentConfirmComponent } from './components/appointment-payment-confirm/appointment-payment-confirm.component';
+import { AppointmentPaymentCardComponent } from './components/appointment-payment-card/appointment-payment-card.component';
 
 const routes: Routes = [
   {
@@ -29,6 +31,8 @@ const routes: Routes = [
       { path: 'appointment-time', component: AppointmentTimeComponent, pathMatch: 'full'},
       { path: 'appointment-completed', component: AppointmentCompletedComponent, pathMatch: 'full'},
       { path: 'appointment-historia', component: AppointmentHistoriaComponent, pathMatch: 'full'},
+      {path: 'appointment-payment-card', component: AppointmentPaymentCardComponent, pathMatch: 'full'},
+      {path: 'appointment-payment-confirm', component:AppointmentPaymentConfirmComponent, pathMatch: 'full'}
     ]
   }
   ];
