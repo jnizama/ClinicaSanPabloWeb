@@ -8,6 +8,7 @@ import { AppointmentResumeComponent } from './components/appointment-resume/appo
 import { MyAppointmentsComponent } from './components/my-appointments/my-appointments.component';
 import { AppointmentTimeComponent } from './components/appointment-time/appointment-time.component';
 import { AppointmentCompletedComponent } from './components/appointment-completed/appointment-completed.component';
+import { AppointmentHistoriaComponent } from './components/appointment-historia/appointment-historia.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,7 @@ const routes: Routes = [
       { path: 'my-appointment', component: MyAppointmentsComponent, pathMatch: 'full'},
       { path: 'appointment-time', component: AppointmentTimeComponent, pathMatch: 'full'},
       { path: 'appointment-completed', component: AppointmentCompletedComponent, pathMatch: 'full'},
+      { path: 'appointment-historia', component: AppointmentHistoriaComponent, pathMatch: 'full'},
     ]
   }
   ];

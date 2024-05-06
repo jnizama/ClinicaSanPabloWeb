@@ -12,6 +12,7 @@ import { LayoutStandardComponent } from './components/layout/layout-standard/lay
 import { CommonModule } from '@angular/common';
 import { AppointmentTimeComponent } from './components/appointment-time/appointment-time.component';
 import { AppointmentCompletedComponent } from './components/appointment-completed/appointment-completed.component';
+import { AppointmentHistoriaComponent } from './components/appointment-historia/appointment-historia.component';
 
 
 
@@ -28,6 +29,7 @@ import { AppointmentCompletedComponent } from './components/appointment-complete
     AppointmentTimeComponent,
     LayoutStandardComponent,
     AppointmentCompletedComponent,   
+    AppointmentHistoriaComponent,
   ],
   imports: [
     BrowserModule,
