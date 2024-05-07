@@ -6,23 +6,19 @@
                     <div class="col-6">
                         <h2 class="text-left" style="color: #a95be0;font-size: 20px; margin-bottom:20px;">Citas médicas online</h2>
                           <!-- <div class="illustration"><i class="icon ion-ios-locked-outline" style="color: rgba(157, 100, 201, 0.877);"></i></div> -->
-                                <!-- <form [formGroup]="loginForm" style="background-color: rgba(255, 255, 255, 0.75);"> -->
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" formControlName="email" placeholder="Usuario" autocomplete="off" style="color: black;">
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" type="password" formControlName="password" placeholder="Contraseña" autocomplete="off" style="color: black;">
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="btn btn-primary btn-block" type="submit" (click)="__on_login()"  style="background-color: rgba(141, 86, 38, 0.809);font-weight: normal;">Ingresar</button>
-                                    </div>
-                                    <!-- <p>
-                                        Datos Formulario: {{loginForm.value | json}}
-                                    </p>
-                                    <p>
-                                         Validar Formulario: {{loginForm.valid}}
-                                    </p>  -->
-                                <!-- </form> -->
+                                
+                                    <form [formGroup]="loginForm" class="form-login" (ngSubmit)="__on_login()" style="background-color: rgba(255, 255, 255, 0.75);">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" formControlName="username"  placeholder="Usuario" autocomplete="off" style="color: black;">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="password" formControlName="password" placeholder="Contraseña" autocomplete="off" style="color: black;">
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-primary btn-block" type="submit" style="background-color: rgba(141, 86, 38, 0.809);font-weight: normal;">Ingresar</button>
+                                        </div>    
+                                    </form>
+                                    
                     </div>
                     <div class="col text-left align-self-center align-middle">
                         <div class="form-group text-right"><img src="assets/images/cita_medica.jpg" style="width: 100%;"></div>
