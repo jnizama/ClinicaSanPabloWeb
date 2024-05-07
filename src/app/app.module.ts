@@ -16,6 +16,8 @@ import { AppointmentHistoriaComponent } from './components/appointment-historia/
 import { AppointmentPaymentConfirmComponent } from './components/appointment-payment-confirm/appointment-payment-confirm.component';
 import { AppointmentPaymentCardComponent } from './components/appointment-payment-card/appointment-payment-card.component';
 import { AppointmentStartComponent } from './components/appointment-start/appointment-start.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 
@@ -40,7 +42,9 @@ import { AppointmentStartComponent } from './components/appointment-start/appoin
   imports: [
     BrowserModule,
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,6 +11,6 @@ export class LoginService {
 
 
   valida_user() {
-    return this.http.get('https://jebf1j7mua.execute-api.us-east-1.amazonaws.com/listar')
+    return this.http.get('http://52.15.45.55:88/api/User/GetValidUser')
   }
 }
