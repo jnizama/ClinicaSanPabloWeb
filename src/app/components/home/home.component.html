@@ -14,7 +14,19 @@
                         <img class="text-center" src="/assets/images/calendar_ok.png" alt="">
                     </div>
                 </div>
-                <div class="row">
+                <div *ngIf="totalCitas > 0" class="row">
+                    <div class="col-12">                        
+                        <p class="text-center" style="color: rgb(0,0,0);border-bottom: none;margin-top: 10px;font-size: 24px;">Tú tienes 
+                            
+
+                            <a [routerLink]="['/appointment-start']" [queryParams]="{debug: true}" >
+                                {{ totalCitas }}     
+                              </a>
+
+                            citas por atender</p>
+                    </div>
+                </div>
+                <div *ngIf="totalCitas == 0" class="row">
                     <div class="col-12">                        
                         <p class="text-center" style="color: rgb(0,0,0);border-bottom: none;margin-top: 10px;font-size: 24px;">Todavía no tienes citas</p>
                     </div>

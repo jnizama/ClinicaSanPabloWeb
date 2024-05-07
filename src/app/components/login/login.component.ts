@@ -50,9 +50,10 @@ __on_login() {
                   this.loginForm.controls.password.value,
     ).pipe(first()).subscribe(data => 
     {
-  
+      
       if(data != null)
-        this.router.navigate(['home']);
+        var totalQtyCitas = data.data.totalCitasPendiente;      
+        this.router.navigate(['home',  { totalCitas: totalQtyCitas }]);
     }
     ,error => {
     console.log("credenciales erradas")
