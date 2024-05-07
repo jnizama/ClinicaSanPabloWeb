@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { HistoryService } from 'src/app/services/history.service';
+import { first } from 'rxjs';
+import { AppointmentService } from 'src/app/services/appointment.service';
+
 
 @Component({
   selector: 'app-appointment-historia',
@@ -9,29 +11,28 @@ import { HistoryService } from 'src/app/services/history.service';
 
 export class AppointmentHistoriaComponent {
 
-  constructor(private readonly ps: HistoryService){}
+  constructor(private readonly pa: AppointmentService){}
 
   lista : any = []
 
   public historial: any[] = []
 
-      
-  historial_be(){
-
-      this.ps.__appointment_history_api ().subscribe((rest:any) => {
-      this.historial = rest.data
-    })
-
-  }
-
-
 
 ngOnInit(): void {
-  
-  this.historial_be()
-
+  this.pa.loadHistory(1).pipe(first()).subscribe(data => 
+    {    
+      if(data != null)
+      {
+        console.log(data);
+        debugger;
+      } 
+      
+      //this.router.navigate(['home',  { totalCitas: totalQtyCitas }]);
+    }
+    ,error => {
+    console.log("credenciales erradas");
+  });
+      
 }
 
-
 }
-
