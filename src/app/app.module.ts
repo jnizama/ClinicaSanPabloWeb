@@ -15,6 +15,7 @@ import { AppointmentCompletedComponent } from './components/appointment-complete
 import { AppointmentHistoriaComponent } from './components/appointment-historia/appointment-historia.component';
 import { AppointmentPaymentConfirmComponent } from './components/appointment-payment-confirm/appointment-payment-confirm.component';
 import { AppointmentPaymentCardComponent } from './components/appointment-payment-card/appointment-payment-card.component';
+import { AppointmentStartComponent } from './components/appointment-start/appointment-start.component';
 
 
 
@@ -33,7 +34,8 @@ import { AppointmentPaymentCardComponent } from './components/appointment-paymen
     AppointmentCompletedComponent,   
     AppointmentHistoriaComponent,
     AppointmentPaymentConfirmComponent,
-    AppointmentPaymentCardComponent, 
+    AppointmentPaymentCardComponent,
+    AppointmentStartComponent, 
   ],
   imports: [
     BrowserModule,
