@@ -16,7 +16,13 @@
                     </div>
                     <div class="row col-8" id="tabla-hora">
                         <div class="col-2" *ngFor="let item of hours1; let i = index">
-                            <input type="text" style="text-align: center; width: 70px;" name="" id="" value="{{ item.name }}" disabled>
+                            
+
+                            <a href="#" class="btn btn-outline-dark" [routerLink]="['/appointment-resume']" 
+                                    [queryParams]="{idtime: item.id }" >
+                                    <i class="fa fa-check">11:30</i>  
+                            </a>
+
                         </div>
                     </div>
                     <div class="row col-3"></div>    
@@ -25,8 +31,13 @@
                 <div class="row">
                     <div class="row col-2"></div>
                     <div class="row col-8" id="tabla-hora">
-                        <div class="col-2" *ngFor="let item of hours2; let i = index">
-                            <input type="text" style="text-align: center; width: 70px;" name="" id="" value="{{ item.name }}" disabled>
+                        <div class="col-2" *ngFor="let item of hours2; let i = index">                            
+
+                            <a href="#" class="btn btn-outline-dark" [routerLink]="['/appointment-resume']" 
+                                    [queryParams]="{idtime: item.id }" >
+                                    <i class="fa fa-check">11:30</i>  
+                            </a>
+
                         </div>
                     </div>
                     <div class="row col-3"></div>    

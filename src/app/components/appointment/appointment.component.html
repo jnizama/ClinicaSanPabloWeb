@@ -35,39 +35,26 @@
                                 <th class="align-middle">Fecha/Hora</th>                                
                                 <th class="align-middle">Sede Clinica</th>
                                 <th class="align-middle">Consultorio</th>
+                                <th class="align-middle">Telefono</th>
                                 <th class="align-middle" style="text-align: center;"></th>                                
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="align-middle">988846138</td>
-                                <td class="align-middle">Rolando Vidal</td>
-                                <td class="align-middle">Moreano Vargas</td>
-                                <td class="align-middle">Administrador</td>
-                                <td class="text-center"><a href="#" class="btn btn-outline-dark"><i class="fa fa-check"></i></a></td>                                
+                            <tr *ngFor="let item of listaDoctores">
+                                <td class="align-middle">{{item.doctor}}</td>
+                                <td class="align-middle">{{item.especialidad}}</td>
+                                <td class="align-middle">{{item.colegiatura}}</td>
+                                <td class="align-middle">{{item.sede}}</td>
+                                <td class="align-middle">{{item.telefono}}</td>
+                                <td class="text-center">
+                                    
+                                    <a href="#" class="btn btn-outline-dark" [routerLink]="['/appointment-time']" 
+                                    [queryParams]="{idmedico: item.idmedico}" >
+                                    <i class="fa fa-check"></i>  
+                                      </a>
+                                </td>
                             </tr>
-                            <tr>
-                                <td>941213546</td>
-                                <td>Ernesto</td>
-                                <td>Montoya Suárez</td>
-                                <td>Gerente</td>
-                                <td class="text-center"><a href="#" class="btn btn-outline-dark"><i class="fa fa-check"></i></a></td>                                
-                            </tr>
-                            <tr>
-                                <td>955678961</td>
-                                <td>Manuel</td>
-                                <td>Cevilla Espinoza</td>
-                                <td>Asesor</td>
-                                <td class="text-center"><a href="#" class="btn btn-outline-dark"><i class="fa fa-check"></i></a></td>                                
-                            </tr>
-                            <tr>
-                                <td>965679478</td>
-                                <td>Daniel</td>
-                                <td>Flores Rojas</td>
-                                <td>Asesor</td>
-                                <td class="text-center"><a href="#" class="btn btn-outline-dark"><i class="fa fa-check"></i></a></td>
-                                
-                            </tr>
+
                         </tbody>
                     </table>
             </div>
