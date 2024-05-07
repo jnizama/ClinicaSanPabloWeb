@@ -39,3 +39,63 @@
     </div>
 </div>
 </section>
+
+<div class="position-relative">
+    <div class="position-absolute top-0 start-50 bottom-0 end-0">
+    <div class="p-3">
+        <div class="col-8">
+            <div class="container" style="padding-top: 0px;">
+                <p class="h4">(pruebas consumo de api)</p>
+                    <ul class="list-unstyled">
+                        <!-- <li>This is a list.</li>
+                        <li>It appears completely unstyled.</li>
+                        <li>Structurally, it's still a list.</li>
+                        <li>However, this style only applies to immediate child elements.</li> -->
+                        <li>Nested lists:
+                        <ul *ngFor=" let item of ResumenCita">
+                            <li>Especialidad:</li>
+                            <li>{{item.especialidad}}</li>
+                            <li>Medico:</li>
+                            <li>{{item.medico}}</li>
+                            <li>and have appropriate left margin</li>
+                        </ul>
+                        </li>
+                        <li>This may still come in handy in some situations.</li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <select class="form-control-sm" style="color: rgb(0,0,0);">
+                    <option value="12">Selecciona Especialidad</option>
+                    <option *ngFor="let item of ResumenCita" value="">{{item.especialidad}}</option>
+                    <!-- <option value="14">Boulogne</option>
+                    <option value="14">Collings</option>
+                    <option value="">Pacific Highway</option>
+                    <option value="">Thomas</option>
+                    <option value="">Timber</option> -->
+                </select> 
+            </div>
+            <div class="col-3">
+                <select class="form-control-sm" style="color: rgb(0,0,0);">
+                    <option value="12">Selecciona Médico</option>
+                    <option *ngFor="let item of ResumenCita" value="">{{item.medico}}</option>
+                    <!-- <option value="13" selected="">Boulogne</option>
+                    <option value="14">Collings</option>
+                    <option value="">Pacific Highway</option>
+                    <option value="">Thomas</option>
+                    <option value="">Timber</option> -->
+                </select>
+            </div>
+            <div class="col-6 text-right">
+                <select class="form-control-sm" style="color: rgb(0,0,0);">
+                    <option value="12" selected="">Selecciona Sede</option>
+                    <option *ngFor="let item of ResumenCita" value="">{{item.sede}}</option>
+                    <!-- <option value="12" selected="">Mostrar Todos</option>
+                    <option value="13">Disponibles</option>
+                    <option value="14">Separados</option>
+                    <option value="14">Vendidos</option> -->
+                </select>
+            </div>
+        </div>
