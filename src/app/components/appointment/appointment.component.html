@@ -3,27 +3,47 @@
         <div class="row justify-content-center" style="margin-bottom: -15px;">
             <div class="login-dark" style="background-image: none;width: 95%;background-color: rgba(255,255,255,0.9);padding: 40px;border-radius: 4px;box-shadow: 3px 3px 4px rgba(0,0,0,0.2);height: auto;">
                 <h2 class="text-center" style="color: rgb(143, 15, 160);font-size: 26px; margin-bottom:20px;"><b>Citas Médicas Online</b></h2>
-                <p>Agenda cita:</p>
+                <!-- <p>Agenda cita:</p> -->
+                <p class="h4 row justify-content-left">  Agenda cita:</p>
                 <div class="row">
                     <p>Elige las opciones:</p>
                 </div>
                 <div class="row">
-                    <div class="col-3"><select class="form-control-sm" style="color: rgb(0,0,0);">
-                        <option value="12">Seleccionar Proyecto</option><option value="13" selected="">Especialidad</option><option value="14">Boulogne</option>
-                        <option value="14">Collings</option><option value="">Pacific Highway</option>
-                        <option value="">Thomas</option><option value="">Timber</option></select>
+                    <div class="col-3">
+                        <select class="form-control-sm" style="color: rgb(0,0,0);">
+                            <option value="12">Selecciona Especialidad</option>
+                            <option *ngFor="let item of listaDoctores" value="">{{item.especialidad}}</option>
+                            <!-- <option value="14">Boulogne</option>
+                            <option value="14">Collings</option>
+                            <option value="">Pacific Highway</option>
+                            <option value="">Thomas</option>
+                            <option value="">Timber</option> -->
+                        </select> 
                     </div>
-                    <div class="col-3"><select class="form-control-sm" style="color: rgb(0,0,0);">
-                        <option value="12">Seleccionar Proyecto</option><option value="13" selected="">Médico</option><option value="14">Boulogne</option>
-                        <option value="14">Collings</option><option value="">Pacific Highway</option>
-                        <option value="">Thomas</option><option value="">Timber</option></select>
+                    <div class="col-3">
+                        <select class="form-control-sm" style="color: rgb(0,0,0);">
+                            <option value="12">Selecciona Médico</option>
+                            <option *ngFor="let item of listaDoctores" value="">{{item.doctor}}</option>
+                            <!-- <option value="13" selected="">Boulogne</option>
+                            <option value="14">Collings</option>
+                            <option value="">Pacific Highway</option>
+                            <option value="">Thomas</option>
+                            <option value="">Timber</option> -->
+                        </select>
                     </div>
-                    <div
-                        class="col-6 text-left">
-                        <select class="form-control-sm" style="color: rgb(0,0,0);"><option value="12" selected="">Mostrar Todos</option><option value="13">Disponibles</option><option value="14">Separados</option><option value="14">Vendidos</option></select></div>
+                    <div class="col-6 text-right">
+                        <select class="form-control-sm" style="color: rgb(0,0,0);">
+                            <option value="12" selected="">Selecciona Sede</option>
+                            <option *ngFor="let item of listaDoctores" value="">{{item.sede}}</option>
+                            <!-- <option value="12" selected="">Mostrar Todos</option>
+                            <option value="13">Disponibles</option>
+                            <option value="14">Separados</option>
+                            <option value="14">Vendidos</option> -->
+                        </select>
+                    </div>
                 </div>
                 <div class="row">
-                    <p>Disponibilidad</p>
+                    <p>Disponibilidad:</p>
                 </div>
                 <div
                     class="table-responsive table-striped" style="border-radius: 10px;">
