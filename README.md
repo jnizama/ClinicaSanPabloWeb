@@ -21,15 +21,27 @@ En relación al desarrollo y programación del presente proyecto y desde mi punt
 
 <img width="342" alt="image" src="https://github.com/jnizama/ClinicaSanPabloWeb/assets/3922089/f405c216-2e30-43d9-b999-773a7cae578d">
 
+
+
 <img width="494" alt="image" src="https://github.com/jnizama/ClinicaSanPabloWeb/assets/3922089/7d1ff63a-b038-4dca-a4f6-d4e4a6c1e40d">
+
+
 
 <img width="495" alt="image" src="https://github.com/jnizama/ClinicaSanPabloWeb/assets/3922089/9d3689ed-d385-4d53-8e86-e6e3f7c3fa0a">
 
+
+
 <img width="428" alt="image" src="https://github.com/jnizama/ClinicaSanPabloWeb/assets/3922089/c9277392-c971-4c79-8340-569aea882ad8">
+
+
 
 <img width="522" alt="image" src="https://github.com/jnizama/ClinicaSanPabloWeb/assets/3922089/150b6d13-27a6-4eba-969d-71893a297030">
 
+
+
 <img width="616" alt="image" src="https://github.com/jnizama/ClinicaSanPabloWeb/assets/3922089/56b15a56-4858-4a63-b052-ec93e6b57f7c">
+
+
 
 <img width="615" alt="image" src="https://github.com/jnizama/ClinicaSanPabloWeb/assets/3922089/eff1721e-b7b6-4960-b17f-5b319d087116">
 
